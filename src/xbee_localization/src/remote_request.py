@@ -4,8 +4,8 @@ import sys
 from xbee_localization.msg import XBeeRequest
 
 def main():
+    rospy.init_node('remote_request', anonymous=True)
     pub = rospy.Publisher("/xbee_request", XBeeRequest, queue_size=10)
-    rospy.init_node('xbee_request', anonymous=True)
     args                    = rospy.myargv(argv=sys.argv)
     address                 = map(int,args[2:])
     request                 = XBeeRequest()

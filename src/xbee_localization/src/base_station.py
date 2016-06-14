@@ -10,12 +10,12 @@ import serial
 import sys
 import threading
 
-class communication_node(object):
-    """docstring for communication_node"""
+class base_station(object):
+    """docstring for base_station"""
     def __init__(self, args):
         """ TODO: ADD Error Handling """
-        super(communication_node, self).__init__()
-        rospy.init_node('communication_node', anonymous=True)
+        super(base_station, self).__init__()
+        rospy.init_node('base_station', anonymous=True)
 
         self.args            = rospy.myargv(argv=sys.argv)
         self.port            = self.args[1]
@@ -102,7 +102,7 @@ class communication_node(object):
 
 
 def main():
-    comm = communication_node(sys.argv)
+    comm = base_station(sys.argv)
 
 if __name__ == '__main__':
     main()
