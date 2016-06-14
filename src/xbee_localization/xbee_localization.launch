@@ -17,6 +17,5 @@
     <!-- <node pkg="tf" type="static_transform_publisher" name="wifi_tf" args="5 -5 0 0 0 0 /map /wifi 100"/> -->
 
     <!-- WiFi Observations -->
-    <node pkg="wifi_lookup" type="wifi_data.py" name="wifi_data" output="screen"/>
     <node pkg="wireless_watcher" type="watcher_node" name="watcher_node" output="screen"/>
 </launch>
