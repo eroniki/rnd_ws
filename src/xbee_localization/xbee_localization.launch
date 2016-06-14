@@ -11,10 +11,10 @@
     <include file="$(find fetch_gazebo_demo)/launch/fetch_nav.launch"/> -->
     <!-- <node pkg="rviz" type="rviz" name="rviz"/> -->
     <!-- Location of the beacons -->
-    <!-- <node pkg="tf" type="static_transform_publisher" name="beacon_1_tf" args="5 0 0 0 0 0 /map /beacon_1 100"/>
-    <node pkg="tf" type="static_transform_publisher" name="beacon_2_tf" args="5 5 0 0 0 0 /map /beacon_2 100"/> -->
+    <node pkg="tf" type="static_transform_publisher" name="beacon_1_tf" args="-2.24 -6.5 0 0 0 0 /map /beacon_1 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="beacon_2_tf" args="-2.24 9.45 0 0 0 0 /map /beacon_2 100"/>
     <!-- Location of the WiFi Beacon -->
-    <!-- <node pkg="tf" type="static_transform_publisher" name="wifi_tf" args="5 -5 0 0 0 0 /map /wifi 100"/> -->
+    <node pkg="tf" type="static_transform_publisher" name="wifi_tf" args="1 -2.3 0 0 0 0 /map /wifi 100"/>
 
     <!-- WiFi Observations -->
     <node pkg="wireless_watcher" type="watcher_node" name="watcher_node" output="screen"/>
