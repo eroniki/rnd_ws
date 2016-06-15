@@ -18,5 +18,5 @@
 
     <!-- WiFi Observations -->
     <node pkg="wireless_watcher" type="watcher_node" name="watcher_node" output="screen"/>
-    <node pkg="rosbag" type="record" name="rosbag" args="/xbee_request /xbee_response /xbee_response/beacon1 /xbee_response/beacon2 /connected /connection /tf /map /tf_static /map_metadata /map_updates /graft/state --o /tmp/indoor_localization"/>
+    <node pkg="rosbag" type="record" name="rosbag" args="/xbee_request /xbee_response /xbee_response/beacon1 /xbee_response/beacon2 /connected /connection /tf /map /tf_static /map_metadata /map_updates /graft/state -o /tmp/indoor_localization"/>
 </launch>
